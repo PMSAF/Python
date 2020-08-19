@@ -1,0 +1,23 @@
+#Welcome people to the Quiz - Created by Sam Finch in 2019
+print("Welcome to Maths Quest! (Demo for interview date...")
+#Ask them to enter their name
+name = input("What's your name? ")
+#Ask them which times table they would like to practice between 2 & 12
+table = int(input(name + ", which times table would you like to practice? Enter a number from 1 to 12 "))
+#Tell the person to practice their selected times table on a piece of paper
+print("Okay,", name, "write out the", str(table), "times table on a piece of paper. When you're ready I'll show you the answers so you can check your work.")
+#Ask them to identify when they are ready and they can check their work
+#Loop until ready
+while((input("Are you ready? enter 'y' to start: ")) != 'y'):
+    print("Are you ready (Enter 'y' to start)?")
+#Print answers to times table from 1-12 vertically down the page
+for num in range(1,13):
+    print(table, "x" ,num,"=",table * num)
+    #Ask if they got the correct answers
+	#If yes print an encouragement and thanks for playing
+	#If they didn’t encourage on their next attempt
+outcome = input("Did you get them all correct? y/n ")
+if(outcome == "y"):
+    print("Great Job! Thank you for playing Maths Quest!")
+else:
+    print("Better luck next time")

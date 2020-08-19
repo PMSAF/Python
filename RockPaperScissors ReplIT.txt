@@ -1,0 +1,32 @@
+#Welcome people to the Quiz - Created by Sam Finch in 2019
+
+print("Welcome to Rock, Paper, Scissors!")
+print("Let's Begin ...")
+
+#Ask the players to enter their names
+name1 = input("Player 1: What's your name?")
+name2 = input("Player 2: What's your name?")
+
+print("Hello" + name1 + " and " + name2)
+print(name2 + " Close your eyes!")
+
+choice1 = input(name1 + ": enter 'r' for rock, 'p' for paper, and 's' for scissors: ")
+print("Great choice! Now - cover your answer and ask " + name2 + "to choose. \n\n\n")
+choice2 = input(name2 + ": enter 'r' for rock, 'p' for paper, and 's' for scissors: ")
+
+if(choice1 == choice2):
+    print("It is a tied game!")
+elif((choice1 == "r") and (choice2 == "s")):
+    print("Player 1 wins. Rock beats Scissors")
+elif((choice1 == "s") and (choice2 == "p")):
+    print("Player 1 wins. Scissors beats Paper")
+elif((choice1 == "p") and (choice2 == "r")):
+    print("Player 1 wins. Paper beats Rock")
+elif((choice1 == "r") and (choice2 == "p")):
+    print("SCHUUUUUUUUUUUUUPA! Player 2 wins. Paper beats Rock")
+elif((choice1 == "s") and (choice2 == "r")):
+    print("Player 2 wins. Rock beats Scissors")
+elif((choice1 == "p") and (choice2 == "s")):
+    print("SCHUUUUUUUUUUUUUPA Player 2 wins. Scissors beats Paper")
+
+print("Thanks for playing Rock, Paper, Scissors")
